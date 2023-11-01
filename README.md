@@ -1,3 +1,6 @@
+### URL
+  https://kyb667.github.io/binggo_game_by_react_ts/
+
 ### PG 名
 
 ：binggo game!
