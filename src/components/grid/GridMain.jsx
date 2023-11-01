@@ -14,12 +14,15 @@ export const GridMain = (props) => {
         margin: "24px 16px",
         padding: 24,
         minHeight: 280,
-        background: colorBgContainer
+        background: colorBgContainer,
       }}
     >
       <Routes>
-        <Route path="/" element={<GameMain />} />
-        <Route path="/binggo" element={<BinggoMain />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<GameMain />} />
+        <Route
+          path={process.env.PUBLIC_URL + "/binggo"}
+          element={<BinggoMain />}
+        />
       </Routes>
     </Content>
   );
