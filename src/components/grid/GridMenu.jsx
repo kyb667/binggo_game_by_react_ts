@@ -17,10 +17,10 @@ export const GridMenu = () => {
       defaultSelectedKeys={["1"]}
       items={[
         {
-          key: "/",
+          key: `/`,
           icon: <UserOutlined />,
-          label: "Home"
-        }
+          label: "Home",
+        },
       ]}
     />
   );

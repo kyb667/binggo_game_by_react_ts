@@ -13,8 +13,8 @@ export const GameMain = () => {
 
     nav(url, {
       state: {
-        type: type
-      }
+        type: type,
+      },
     });
   };
 
@@ -23,9 +23,9 @@ export const GameMain = () => {
       <Row gutter={16}>
         <Col span={8}>
           <Card title="binggo game">
-            <Button onClick={SendPage.bind(this, "/binggo", 3)}>3X3</Button>
-            <Button onClick={SendPage.bind(this, "/binggo", 4)}>4X4</Button>
-            <Button onClick={SendPage.bind(this, "/binggo", 6)}>6X6</Button>
+            <Button onClick={SendPage.bind(this, `/binggo`, 3)}>3X3</Button>
+            <Button onClick={SendPage.bind(this, `/binggo`, 4)}>4X4</Button>
+            <Button onClick={SendPage.bind(this, `/binggo`, 6)}>6X6</Button>
           </Card>
         </Col>
         <Col span={8}>

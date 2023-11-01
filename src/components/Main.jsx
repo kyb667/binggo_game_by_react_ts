@@ -20,7 +20,7 @@ import {
   BinggoGameClickNumProvider,
   BinggoGameEndProvider,
   BinggoListProvider,
-  BinggoComputerListProvider
+  BinggoComputerListProvider,
 } from "../contexts/binggo/BinggoContext";
 
 const { Sider } = Layout;
@@ -29,7 +29,7 @@ export const Main = () => {
   const [collapsed, setCollapsed] = useRecoilState(stateCollapsed);
 
   const {
-    token: { colorBgContainer }
+    token: { colorBgContainer },
   } = theme.useToken();
   return (
     <AppContext
@@ -42,10 +42,10 @@ export const Main = () => {
         BinggoGameClickNumProvider,
         BinggoGameEndProvider,
         BinggoListProvider,
-        BinggoComputerListProvider
+        BinggoComputerListProvider,
       ]}
     >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Layout>
           <Sider trigger={null} collapsible collapsed={collapsed}>
             <div className="demo-logo-vertical" />

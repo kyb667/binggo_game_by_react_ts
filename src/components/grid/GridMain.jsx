@@ -18,11 +18,8 @@ export const GridMain = (props) => {
       }}
     >
       <Routes>
-        <Route path={process.env.PUBLIC_URL + "/"} element={<GameMain />} />
-        <Route
-          path={process.env.PUBLIC_URL + "/binggo"}
-          element={<BinggoMain />}
-        />
+        <Route path={"/"} element={<GameMain />} />
+        <Route path={"/binggo"} element={<BinggoMain />} />
       </Routes>
     </Content>
   );

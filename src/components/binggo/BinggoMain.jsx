@@ -9,7 +9,7 @@ export const BinggoMain = () => {
       {location.state && location.state.type ? (
         <BinggoGrid />
       ) : (
-        <Navigate to="/" replace={true} />
+        <Navigate to={`/`} replace={true} />
       )}
     </>
   );

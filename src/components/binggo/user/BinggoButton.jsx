@@ -3,7 +3,7 @@ import { useContext } from "react";
 import {
   BinggoGameTurnFlagContext,
   BinggoPanContext,
-  BinggoPanReadOnlyFlagContext
+  BinggoPanReadOnlyFlagContext,
 } from "../../../contexts/binggo/BinggoContext";
 import { useNavigate } from "react-router-dom";
 
@@ -18,7 +18,7 @@ export const BinggoButton = (props) => {
 
   // readonly flag
   const { binggoPanReadOnlyFlag, setBinggoPanReadOnlyFlag } = useContext(
-    BinggoPanReadOnlyFlagContext
+    BinggoPanReadOnlyFlagContext,
   );
 
   const { setBinggoGameTurnFlag } = useContext(BinggoGameTurnFlagContext);
@@ -62,7 +62,7 @@ export const BinggoButton = (props) => {
   };
 
   const retry = () => {
-    nav("/");
+    nav(`/`);
   };
   return (
     <>
